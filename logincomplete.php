@@ -1,12 +1,18 @@
 <?php
 
-//Tela de saudação
+require_once __DIR__ . '\DBConnection.php';
+require_once __DIR__ . '\SessionManager.php';
 
+//Cria conexão com Database
+$database = new DatabaseConnection();
+$database->ConnectToDatabase();
+
+$session = new SessionManager();
 
 session_start();
 
 //Verifica se há alguma sessão ativa. Se existe, execute o html. Se não existe, volte para o index
-if (array_key_exists('logged',$_SESSION) ) 
+if ($session->SessionExists($database)) 
 {
 
 ?><!DOCTYPE html>

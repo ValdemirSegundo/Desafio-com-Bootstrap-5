@@ -1,14 +1,18 @@
 <?php
 
 require_once __DIR__ . '\DBConnection.php';
+require_once __DIR__ . '\SessionManager.php';
 
 //Cria conexão com Database
 $database = new DatabaseConnection();
 $database->ConnectToDatabase();
 
+//Cria a instância da sessão
+$session = new SessionManager();
+
 //Verifica se há alguma sessão ativa. Se existe, vá direto para tela de saudação. Se não existe, execute todo o html
 session_start();
-if (array_key_exists('logged',$_SESSION))
+if ($session->SessionExists($database))
 {
     header('location: /logincomplete.php?email=' .$_SESSION['username']);
     exit();

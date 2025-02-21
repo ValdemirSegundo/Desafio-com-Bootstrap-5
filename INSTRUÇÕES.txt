@@ -14,11 +14,3 @@
 3-Com o servidor ligado, vá para o navegador e digite "http://localhost:8080/" para executar o projeto.
 
 
-Observações pessoais:
-
-Infelizmente só deu para fazer um dos desafios, pois não consegui estudar a tempo como funciona o react js junto com php. 
-Como sou da área de desenvolvimento de jogos, é dificil estudar várias tecnologias em poucos dias. Depois de 14 anos 
-fora da área de desenvolvimento web, tentei aplicar o projeto como prometido. De qualquer forma, agradeço a oportunidade de
-ter tido contato novamente, graças a vocês, com a área da computação e um pouco desse universo que é o desenvolvimento web. 
-
-Obrigado =)
